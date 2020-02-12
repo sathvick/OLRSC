@@ -1,0 +1,83 @@
+body {
+  background-color: Gray;
+}
+
+.maindiv{
+ text-align:left;
+FONT-SIZE: 16px;
+font-family: Verdana;
+position: relative;
+Margin: auto;
+font-family: Calibri, sans-serif;
+background-color: white;
+border-color=black;
+border-style: solid;
+border-width: 1px;
+width: 80%;
+padding: 20px;
+}
+.lb{
+ text-align:left;
+FONT-SIZE: 14px;
+font-family: Calibri, sans-serif;
+font-weight: normal; color: black;
+position: relative;
+padding-right: 10px;
+}
+
+h2{
+FONT-SIZE: 26px;
+padding: 10px;
+font-family: Bebas Neue, Arial;
+text-align:center;
+color: white;
+Background: black;
+Background-size: cover;
+Letter-spacing: 1px;
+Word-spacing: 2px;
+}
+
+h4{
+FONT-SIZE: 16px;
+Font-weight: bold;
+font-family: Calibri, sans-serif;
+Color: black;
+}
+
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+td {
+  align-items: center;
+}
+
+fieldset {
+  overflow: hidden
+}
+
+.some-class {
+  float: left;
+  clear: none;
+}
+
+label {
+  float: left;
+FONT-SIZE: 15px;
+font-family: Calibri, sans-serif;
+font-weight: normal; color: black;
+  clear: none;
+  display: block;
+Position: relative;
+Padding-left: 6px;
+Padding-right: 18px;
+}
+
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+}
