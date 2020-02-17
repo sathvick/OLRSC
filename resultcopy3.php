@@ -284,14 +284,16 @@ if ($conn->query($sql) === TRUE) {
     <h2>Online Learning Readiness Framework</h2>
     </br>
     <div class="col-sm-6">
+      <!-- center required for chart -->
       <center>
+        <!-- relative is for the canvas box and proper padding -->
         <div class="relative">
           <div id="canvas-holder" >
-            <canvas id="chartarea1" width="100%" height="100%" style="border:1px solid #000000;"></canvas>
-            <div class="topleft">Motivational Management</div>
+            <canvas id="chartarea1" width="10" height="10" style="border:1px solid #000000;"></canvas>
+            <div class="topleft"><b>Motivational Management</div>
             <div class="topright">Learning Management</div>
             <div class="bottomleft">Interaction Management</div>
-            <div class="bottomright">Resources Management</div>
+            <div class="bottomright">Resources Management</b></div>
             <div class="absolute-center text-center">
               <p style="font-size:2.25vw;">Be a</p>
               <p style="font-size:2.25vw;">Successful</p>
@@ -300,114 +302,12 @@ if ($conn->query($sql) === TRUE) {
           </div>
       </center>
       <br>
+      <!-- Between Download Button and chart -->
       </div>
+      <!-- relative ends here -->
       <div class="col-sm-6">
-        <div class="divs" id="myDIV1">
-          <p>Goal Setting</p>
-          <br>
-          <p>It refers to students’ strategy to manage and achieve their goals by breaking a long-term goal (e.g., completing an extensive and complex task) into small sub-goals so that they can be easily achieved. </p>
-          <br>
-          <ol>
-            <li>Plan your assignment</li>
-            <li>Break down course workload</li>
-            <li>Use step-by-step approach</li>
-            <li>Set your goals effectively</li>
-          </ol>
-        </div>
-        <div class="divs" id="myDIV2">
-          <p>Monitoring</p>
-          <br>
-          <p>It refers to Students’ strategy to monitor their learning status in an online course to make sure they are on the right track. </p>
-          <br>
-          <ol>
-            <li>Check your online course regularly</li>
-            <li>Check the course guidelines</li>
-            <li>Check your own progress regularly</li>
-            <li>Check your participation in activities regularly</li>
-          </ol>
-        </div>
-        <div class="divs" id="myDIV3">
-          <p>Time Management</p>
-          <br>
-          <p>It refers to Students’ strategy to manage and use their time effectively for success in online learning by predicting necessary time allotment for course task in relation to their entire schedule.  </p>
-          <br>
-          <ol>
-            <li>Plan your timeline to complete an online assignment</li>
-            <li>Mark online assignments with due dates</li>
-            <li>Give top priority on your asssignment completion</li>
-            <li>allot enough time for online learning</li>
-          </ol>
-        </div>
-        <div class="divs" id="myDIV4">
-          <p>Space Management</p>
-          <br>
-          <p>It refers to Students’ strategy to manage their space effectively for success in online learning by finding a comfortable and non-distractive place in which they can focus on their tasks.  </p>
-          <br>
-          <ol>
-            <li>Minimize distractions</li>
-            <li>Find a place in which you study comfortably</li>
-            <li>Find a place in which you can focus on your learning</li>
-          </ol>
-        </div>
-        <div class="divs" id="myDIV5">
-          <p>Technology Management</p>
-          <br>
-          <p>It refers to Students’ level of proficiency in using technology relevant to online courses (e.g., using functions in Blackboard or installing software to learn). </p>
-          <br>
-          <ol>
-            <li>Navigate Learning Management System (e.g., Blackboard)</li>
-            <li>Use Microsoft office or Google Tools</li>
-            <li>Use suggested software</li>
-            <li>Toubleshoot technical issues</li>
-          </ol>
-        </div>
-        <div class="divs" id="myDIV6">
-          <p>Interaction with the Instructor</p>
-          <br>
-          <p>It refers to Students’ strategy to interact with the instructor of their online courses by initiating questions and discussions, as well as maintaining open communication with the instructor.  </p>
-          <br>
-          <ol>
-            <li>Clarify the expectation with your instructor</li>
-            <li>Seek assistance from the instructor</li>
-            <li>Ask for clarification</li>
-            <li>Timely inform the instructor when issues arise</li>
-          </ol>
-        </div>
-        <div class="divs" id="myDIV7">
-          <p>Interaction with the Peers</p>
-          <br>
-          <p>It refers to Students’ strategy to interact with the peers not only for learning but also for contributing to the online learning community by questioning and providing opinions to help each other.  </p>
-          <br>
-          <ol>
-            <li>Respond to others in a timely manner</li>
-            <li>Seek assistance from other students </li>
-            <li>Help other students</li>
-            <li>Express your opinions to other students</li>
-          </ol>
-        </div>
-        <div class="divs" id="myDIV8">
-          <p>Effort Regulation</p>
-          <br>
-          <p>It refers to Students’ strategy to manage their effort and attention in the face of distractions and uninteresting tasks by being persistence in accomplishing learning tasks. </p>
-          <br>
-          <ol>
-            <li>Work hard to do well</li>
-            <li>Complete the assignment or activity</li>
-            <li>Be persitent</li>
-            <li>Do your best to meet the learning goals</li>
-          </ol>
-        </div>
-        <div class="divs" id="myDIV9">
-          <p>Mastery Self-Talk </p>
-          <br>
-          <p>It refers to Students’ strategy to enhance their competence through self-talking and reinforcing to master the content.  </p>
-          <br>
-          <ol>
-            <li>Persuade yourself to master course content</li>
-            <li>Challenge yourself</li>
-            <li>Self-talk</li>
-          </ol>
-        </div>
+<div id="example1">This div has a width of 300px. But the full width is 300px + 20px (left and right border) + 60px (left and right padding) = 380px!</div>
+
       </div>
       <a href="Framework and Resources1104.pdf" download>
       <button class="btn" style="width:100%"><i class="fa fa-download"></i> Click to Download Tips for Online Learning</button>
