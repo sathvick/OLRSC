@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .relative {
   position: relative;
 }
@@ -42,6 +43,8 @@
 
 
 
+=======
+>>>>>>> 1f875594eb9be3ccb0ac2a4551b21a10d6962ce7
 .btn {
 	background-color: DodgerBlue;
 	border: none;
@@ -105,6 +108,7 @@ canvas {
 		width: 100%;
 	}
 }
+<<<<<<< HEAD
 .modal-dialog {
 
   /* other stuff we already covered */
@@ -221,3 +225,5 @@ canvas {
   padding: 30px;
   border: 10px solid blue;
 }
+=======
+>>>>>>> 1f875594eb9be3ccb0ac2a4551b21a10d6962ce7
