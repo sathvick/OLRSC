@@ -21,7 +21,7 @@ Html, CSS, JavaScript, Bootstrap, PHP, JQuery
 ### JSPDF
 Used JSPDF along with php to create lucrative dynamic PDF that can be downloaded by coordinators in differnet part of the world. The PDF contains the chartjs Polar Chart, dynamic scores of group of students took the survey,and personalised comments and tips to increase the online learning readiness score.
 
-## ChartJS
+### ChartJS
 Used Chartjs to draw Polar charts, Bar charts, Doughnut charts for designing lucrative survey result page and Reasearcher, Project Coordinator, Site Coordinator Dashboards respectively.
 I have customised the ChartJS alot, tweeked the code to display customised data like score, standard deviation in legend of the chart. Clickable modals, customaised tooltips features are also among them.
 
