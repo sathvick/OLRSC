@@ -1,6 +1,6 @@
 <?php
 $servername   = "localhost";
-$database = "olrsc_test";
+$database = "olrsc_ted";
 $username = "root";
 $password = "WAp6aspu";
 

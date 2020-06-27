@@ -1,49 +1,40 @@
-body {
-  background-color: Gray;
+.maindiv {
+  text-align: left;
+  font-size: 16px;
+  font-family: Verdana;
+  position: relative;
+  margin: auto;
+  font-family: Calibri, sans-serif;
+  padding: 20px;
+}
+.lb {
+  text-align: left;
+  font-size: 14px;
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  color: black;
+  position: relative;
+  padding-right: 10px;
 }
 
-.maindiv{
- text-align:left;
-FONT-SIZE: 16px;
-font-family: Verdana;
-position: relative;
-Margin: auto;
-font-family: Calibri, sans-serif;
-background-color: white;
-border-color=black;
-border-style: solid;
-border-width: 1px;
-width: 80%;
-padding: 20px;
-}
-.lb{
- text-align:left;
-FONT-SIZE: 14px;
-font-family: Calibri, sans-serif;
-font-weight: normal; color: black;
-position: relative;
-padding-right: 10px;
+h2 {
+  font-size: 26px;
+  padding: 10px;
+  font-family: Bebas Neue, Arial;
+  text-align: center;
+  color: white;
+  background: black;
+  background-size: cover;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
 
-h2{
-FONT-SIZE: 26px;
-padding: 10px;
-font-family: Bebas Neue, Arial;
-text-align:center;
-color: white;
-Background: black;
-Background-size: cover;
-Letter-spacing: 1px;
-Word-spacing: 2px;
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Calibri, sans-serif;
+  color: black;
 }
-
-h4{
-FONT-SIZE: 16px;
-Font-weight: bold;
-font-family: Calibri, sans-serif;
-Color: black;
-}
-
 
 .responsive {
   width: 100%;
@@ -55,7 +46,7 @@ td {
 }
 
 fieldset {
-  overflow: hidden
+  overflow: hidden;
 }
 
 .some-class {
@@ -65,17 +56,18 @@ fieldset {
 
 label {
   float: left;
-FONT-SIZE: 15px;
-font-family: Calibri, sans-serif;
-font-weight: normal; color: black;
+  font-size: 15px;
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  color: black;
   clear: none;
   display: block;
-Position: relative;
-Padding-left: 6px;
-Padding-right: 18px;
+  position: relative;
+  padding-left: 6px;
+  padding-right: 18px;
 }
 
-input[type=radio],
+input[type='radio'],
 input.radio {
   float: left;
   clear: none;

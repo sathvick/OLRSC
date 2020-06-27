@@ -1,169 +1,253 @@
+<?php
+session_start();
+$_SESSION["access"] = "true";
+
+?>
 <!DOCTYPE html>
-<html>
-<<<<<<< HEAD
+<html lang="en">
   <head>
-    <title>OLRSC</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript"  src='http://cdn.renderedfont.com/js/renderedfont-0.8.min.js#free'></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <style>
-    img {
-       object-fit: fill;
-       max-width: 100%;
-       max-height: 100%;
-       width: auto;
-       height: auto;
-    }
-      html, body { height: 100%; width: 100%; margin: 0; }
-      .banner { height: 80%; width: 100%}
-      .container-fluid{
-      margin-left: 0px;
-      position: relative;
-      }
-      * {
-      box-sizing: border-box;
-      }
-      @media only screen and (max-width:800px) {
-      /* For tablets: */
-      .main {
-      width: 80%;
-      padding: 0;
-      }
-      .right {
-      width: 100%;
-      }
-      }
-      @media only screen and (max-width:500px) {
-      /* For mobile phones: */
-      .menu, .main, .right {
-      width: 100%;
-      }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+      />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+      />
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+      ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+      ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+      ></script>
+      <script type="text/javascript">
+    $(document).ready(function () {
+        window.scrollTo(0,0);
+    });
+</script>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <title>OLRSC-TED</title>
+    <script>
+      function checkPassword(){
+       if(document.getElementById('access').value == 'gotechteach2020!'){
+          location.href = "http://ciel.educ.ttu.edu/olrscted/form.php";
+         } else {
+          return false;
+        }
+       }
+      </script>
   </head>
+  <style>
+    body {overflow-x: hidden;}
+
+    .bluebg {
+    background-color: #1c4491 !important;
+    }
+    .yellowbg {
+    background-color: #fcb03b;
+    }
+    .redbg {
+    background-color: #ef487b;
+    }
+  </style>
   <body>
-<img src="Banner1.png" style="width:100%; height:35%;">
-  <!-- <div style="width:100%; height:50%"><img src="Banner1.png" style="height:100%; width:100%"></div> */-->
-    <div id="about" class="container-fluid" style="padding-left: 60px;padding-right:60px; color: black;">
-      </br></br>
-      <hr style="border-style: solid;
-        border-width: 5px; border-color: #d64550; width:30%;" align= "left">
-      <h1 style="font-family: Bebas Neue, Arial;">PURPOSE OF THE OLRSC</h1>
-      <p  align= "justify", style="font-size: 18px;font-family: Calibri, sans-serif; line-height: 1.5;">The Online Learning Readiness Self-Check (OLRSC) system is created to help you measure how ready you are for the online courses. Besides providing you an overall readiness score, we also provide individualized feedback and valuable resources for you to be successful in online learning.</p>
-      </br>
-      <hr style="border-style: solid;
-        border-width: 5px; border-color: #91c2c9; width: 10%;" align= "left">
-      <h1 style="font-family: Bebas Neue, Arial;">ABOUT THE OLRSC</h1>
-      <p align= "justify", style="font-size: 18px;font-family: Calibri, sans-serif; line-height: 1.5;">This OLRSC identifies your level of proficiency in the nine areas that significantly contribute to online academic success. It takes about 10 minutes to complete the self-check survey and the responses are anonymous. To provide you an accurate result, it is important that you choose the most honest description of yourself.
-        <br>After you complete the survey, you will receive an overall score including individual scores of each area. All the recommendation and resources from proven research will be provided based on your strengths and weaknesses. Remember to keep a copy of the recommendations for your records and retake the survey later.
-      </p>
-      </br>
-      <hr style="border-style: solid;
-        border-width: 5px; border-color: #3d5467; width: 30%;" align= "left">
-      <h1 style="font-family: Bebas Neue, Arial;">WHO CAN USE THE OLRSC?</h1>
-      <p align= "justify", style="font-size: 18px;font-family: Calibri, sans-serif;">This system is for anyone who want to diagnose their strengths and weaknesses in online learning.</p>
-      </br>
-      <hr style="border-style: solid;
-        border-width: 5px; border-color: #df7373; width: 10%;" align= "left">
-      <h1 style="font-family: Bebas Neue, Arial;">CONTACT</h1>
-      <p style="font-size: 18px;font-family: Calibri, sans-serif;">If you have any questions, please contact us.</br></p>
-      </br>
-      <div id="about" class="container-fluid" style="background-color:#C6CAC7; color: black;width: 50%;">
-        <p style="font-size: 18px;font-family: Calibri, sans-serif;font-weight:bold;"></br>Center for Innovation in E-Learning (CIEL)</br></p>
-        <p style="font-size: 18px;font-family: Calibri, sans-serif;">Texas Tech University</br>College of Education</br>3002 18th Street Lubbock</br>TX 79409</br><img src="ciel.png" alt="ciel" align="right" width="147.84" height="69.12"></br>Phone: (806) 742-2377</br>Email: ciel.educ@ttu.edu</br></p>
-        </br></br>
+    <!-- START HERE -->
+    <!-- NAVBAR WITH DROPDOWN -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow fixed-top" id="main-nav">
+      <!-- <div class="container"> -->
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle mr-4"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >
+          Sign In
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-right"
+            aria-labelledby="dropdownMenuButton"
+            style="margin-left:-10px"
+            >
+            <a class="dropdown-item" href="http://ciel.educ.ttu.edu/olrscted/researchlogin.php">Researcher</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="http://ciel.educ.ttu.edu/olrscted/psitelogin.php">Program Coordinator</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="http://ciel.educ.ttu.edu/olrscted/siteAuth.php">Site Coordinator</a>
+          </div>
+        </div>
       </div>
-      <p style="font-size: 18px;font-family: Calibri, sans-serif;"></br>Click on the “START” button below to start the survey.</br>
-        </br>
-      </p>
-      <form action="resultcopy.php" align="center" method = "post">
-        <input type="submit" style="font-family: Bebas Neue, Arial;font-size:27px;color:white;background-color:black;border-radius: 4px;border:1px solid white; align: center; padding:5px;" value="    START    "/>
-      </form>
-      <form action="http://ciel.educ.ttu.edu/olrsc/db.php">
-    <input type="submit" value="Admin View" />
-</form>
-      </br>
+    </nav>
+
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <!-- <div class="row" id="Home">
+      <div class="col-12 ">
+        <header class="masthead"> -->
+          <!-- <div class="container h-100"> -->
+          <!-- <div class="row h-100 align-items-center">
+            <img src="img/Banner1.png" class="img-fluid" alt="Responsive image" />
+          </div>
+      </div>
     </div>
+    </header> -->
+
+   
+  <div class="row" id="Home">
+    <img src="img/Banner1.png" class="img-responsive img-fluid pt-4" alt="Responsive image">
+    </div>
+
+    <div id="About" >
+      </div>
+    <!-- CARD OUTLINE -->
+    <!-- BACKGROUND COLOR -->
+    <div class="card text-white m-5 yellowbg">
+      <div class="card-header">
+        <h1 class="card-title">PURPOSE OF THE OLRSC</h1>
+      </div>
+      <div class="card-body">
+        <p class="lead">
+          <b>The Online Learning Readiness Self-Check (OLRSC) system is created to help you measure how ready you are for the online courses. Besides providing you an overall readiness score, we also provide individualized feedback and valuable resources for your success in online learning.
+        </p>
+      </div>
+    </div>
+    <div class="card text-white m-5 bluebg">
+      <div class="card-header">
+        <h1 class="card-title">ABOUT THE OLRSC</h1>
+      </div>
+      <div class="card-body">
+        <p class="lead">
+          <b>This OLRSC identifies your level of proficiency in the nine areas that significantly contribute to online academic success. It takes about 10 minutes to complete the self-check survey and the responses are anonymous. To provide you an accurate result, it is important that you choose the most honest description of yourself.
+          <br />
+          After you complete the survey, you will receive an overall score including individual scores in each area. All the recommendations and resources from proven research will be provided based on your strengths and weaknesses. Remember to keep a copy of the recommendations for your records and retake the survey later.</b>
+        </p>
+      </div>
+    </div>
+    
+    <div class="card redbg text-white m-5">
+      <div class="card-header">
+        <h1 class="card-title">WHO CAN USE THE OLRSC?</h1>
+      </div>
+      <div class="card-body">
+        <p class="lead">
+          <b>This system is for teacher candidates at TTU who want to diagnose their strengths and weaknesses in online learning.</b>
+        </p>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="card bg-white text-black m-5">
+      <div class="card-body">
+        <p class="lead">
+          Enter the Access Code and click on the “START” button below to start the survey.
+        </p>
+        <hr>
+        <form method="post">
+        <center>
+    <div>
+      <input type="text" class="form-control col-sm-3" id="access" placeholder="Enter Your Access Code Here" required>
+    </div><br>
+        
+          <a class="btn btn-success btn-lg" type="button" onclick="checkPassword()">START</a>
+        </center>
+      </div>
+    </div>
+  </form>
+    <div id="Contact" class="bg-light pl-5 pr-5 pt-2 pb-2 text-dark mb-0">
+    <h2>Contact Us</h2>
+    <hr class="bg-white">
+
+    <h4>Center for Innovation in E-Learning (CIEL)</h4>
+    <br>
+    <div class="row align-items-end">
+                <div class="col">
+                <address>
+      <strong>Texas Tech University</strong><br>
+      College of Education<br>
+      3002 18th Street Lubbock<br>
+      TX 79409
+    </address>
+                </div>
+                <div class="col">
+                <address>
+
+<table>
+<tr>
+<td><strong>Phone: </strong></td>
+<td>(806) 742-2377</td>
+</tr>
+<tr>
+<td><strong>Email: </strong></td>
+<td><a href="mailto:#">ciel.educ@ttu.edu</a></td>
+</tr>
+</table>
+    </address>
+                </div>
+                <div class="col-sm-3 align-self-end mb-3">
+                <img class="card-img-bottom" src="img/CIEL logo.png" alt="Card image cap">
+                </div>
+    </div>
+    <script>
+      $('body').scrollspy({ target: '#main-nav' });
+      
+      // Add smooth scrolling
+      $('#main-nav a').on('click', function (e) {
+      // Check for a hash value
+      if (this.hash !== '') {
+      // Prevent default behavior
+      e.preventDefault();
+      
+      // Store hash
+      const hash = this.hash;
+      
+      // Animate smooth scroll
+      $('html, body').animate({
+      scrollTop: $(hash).offset().top
+      }, 900, function () {
+      // Add hash to URL after scroll
+      window.location.hash = hash;
+      });
+      }
+      });
+    </script>
+
   </body>
-=======
-	<head>
-<title>OLRSC</title>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript"  src='http://cdn.renderedfont.com/js/renderedfont-0.8.min.js#free'></script>
-	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<style>
-
-		.container-fluid{
-			margin-left: 0px;
-			position: relative;
-		}
-
-* {
-  box-sizing: border-box;
-}
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-
-	</style>
-	</head>
-
-<body>
-<img src="OLRSC.png" style="width: 1280px;
-height: 400px; ">
-<div id="about" class="container-fluid" style="padding-left: 60px;padding-right:60px; color: black;"></br></br>
-	<hr style="border-style: solid;
-  border-width: 5px; border-color: #d64550; width:30%;" align= "left">
-<h1 style="font-family: Bebas Neue, Arial;">PURPOSE OF THE SURVEY</h1>
-<p  align= "justify", style="font-size: 18px;font-family: Calibri, sans-serif; line-height: 1.5;">For decades, researchers have studied factors that make college students successful at Universities. Typically, those assessments were administered retrospectively to enrolled students who had already attended classes. In order to evaluate your readiness before the classes begin, we’ve designed this adapted self-assessment survey to measure your current online learning abilities, and provide you with real-time feedback and valuable resources to increase your chances of success.
-</p></br>
-<hr style="border-style: solid;
-  border-width: 5px; border-color: #91c2c9; width: 10%;" align= "left">
-<h1 style="font-family: Bebas Neue, Arial;">ABOUT SURVEY</h1>
-<p align= "justify", style="font-size: 18px;font-family: Calibri, sans-serif; line-height: 1.5;">This survey will identify and test your level of proficiency or competence in the Four (9) areas that significantly contribute to your online academic success.
-	<br>After you have completed the survey, we will provide you with an overall score, a breakdown of your results, and any necessary resources you may need to be successful at Texas Tech. Recommendations will be based on proven research unique to your strengths and areas of improvements.
-	<br> Remember to keep a copy of your results and recommendations for your records and to retake the survey next year.
-	<br>This survey will only take 10 minutes and your responses are anonymous.
-</p></br>
-<hr style="border-style: solid;
-  border-width: 5px; border-color: #3d5467; width: 30%;" align= "left">
-<h1 style="font-family: Bebas Neue, Arial;">WHO CAN TAKE THE SURVEY</h1>
-<p align= "justify", style="font-size: 18px;font-family: Calibri, sans-serif;">Everyone can take the survey. You have the choice to take this survey. You may choose to stop taking the survey at any time with no penalty. You do not need to provide a reason if you are unable to take the survey. We do not expect that you will face any negative consequences from taking this survey.
-</p></br>
-<hr style="border-style: solid;
-  border-width: 5px; border-color: #df7373; width: 10%;" align= "left">
-<h1 style="font-family: Bebas Neue, Arial;">CONTACT</h1>
-<p style="font-size: 18px;font-family: Calibri, sans-serif;">If you have any questions please contact us:</br>
-</p></br>
-<div id="about" class="container-fluid" style="background-color:#C6CAC7; color: black;width: 50%;">
-<p style="font-size: 18px;font-family: Calibri, sans-serif;font-weight:bold;"></br>Center for Innovation in E-Learning (CIEL)</br></p>
-<p style="font-size: 18px;font-family: Calibri, sans-serif;">Texas Tech University</br>College of Education</br>3002 18th Street Lubbock</br>TX 79409</br><img src="ciel.png" alt="ciel" align="right" width="147.84" height="69.12"></br>Phone: (806) 742-2377</br>Email: ciel.educ@ttu.edu</br>
-</p></br>
-</div>
-<p style="font-size: 18px;font-family: Calibri, sans-serif;"></br>By clicking the 'I Agree' button below, you are agreeing to take the survey.</br>
-</br></p>
-<form action="resultcopy.php" align="center">
-    <input type="submit" style="font-family: Bebas Neue, Arial;font-size:27px;color:white;background-color:black;border-radius: 4px;border:1px solid white; align: center; padding:5px;" value="    I Agree    "/>
-</form>
-</br>
-</div>
-</body>
->>>>>>> 1f875594eb9be3ccb0ac2a4551b21a10d6962ce7
 </html>

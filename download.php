@@ -1,5 +1,5 @@
 <?php
-$filename = 'db.csv';
+$filename = 'OLRSC.csv';
 $export_data = unserialize($_POST['export_data']);
 
 // file creation

@@ -1,16 +1,15 @@
-<<<<<<< HEAD
 .relative {
   position: relative;
 }
 
 .absolute-center {
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .absolute-left {
-  position:absolute;
+  position: absolute;
 }
 
 .container {
@@ -41,97 +40,87 @@
   font-size: 1vw;
 }
 
-
-
-=======
->>>>>>> 1f875594eb9be3ccb0ac2a4551b21a10d6962ce7
 .btn {
-	background-color: DodgerBlue;
-	border: none;
-	color: white;
-	padding: 12px 30px;
-	cursor: pointer;
-	font-size: 20px;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
 }
-
 
 /* Darker background on mouse-over */
 
 .btn:hover {
-	background-color: RoyalBlue;
+  background-color: RoyalBlue;
 }
 
 canvas {
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .container div {
-	display: inline-block;
+  display: inline-block;
 }
-
 
 /* basic positioning */
 
-
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-@media (min-width:500px) {
-	.caption-2 .action-footer {
-		margin: 0;
-		position: relative;
-		bottom: 0;
-		height: 10%;
-		width: 100%;
-	}
+@media (min-width: 500px) {
+  .caption-2 .action-footer {
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width:800px) {
-	/* For tablets: */
-	.main {
-		width: 80%;
-		padding: 0;
-	}
-	.right {
-		width: 100%;
-	}
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width:500px) {
-	/* For mobile phones: */
-	.menu,
-	.main,
-	.right {
-		width: 100%;
-	}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .menu,
+  .main,
+  .right {
+    width: 100%;
+  }
 }
-<<<<<<< HEAD
 .modal-dialog {
-
   /* other stuff we already covered */
 
   width: 600px;
   max-width: 100%;
-	height: 100%;
-
+  height: 100%;
 }
 .introright {
-		border:1px solid #ccc;
-		width:600px;
-		height:508px;
-		position: absolute;
-		top:180px;
-		left:600px;
-		background-color: #f7f7f7;
-		color: #444343;
-		font-family: avenir;
-		font-size: 17px;
+  border: 1px solid #ccc;
+  width: 600px;
+  height: 508px;
+  position: absolute;
+  top: 180px;
+  left: 600px;
+  background-color: #f7f7f7;
+  color: #444343;
+  font-family: avenir;
+  font-size: 17px;
 }
 .modal {
-  top:100px;
+  top: 100px;
   overflow: hidden;
   overflow-y: hidden;
 }
@@ -139,84 +128,73 @@ canvas {
   background-position: top center;
 }
 .embed-responsive {
-    position: relative;
-    display: block;
-    height: 0;
-    padding: 0;
-    overflow: fixed;
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: fixed;
+}
+
+#mainDiv {
+  display: block;
+  font-size: 1.5vw;
+  height: 88vh;
+  padding: 20px 50px;
 }
 
 #myDIV1 {
-	height: 73vh;
-	font-size: 1.5vw;
-		display : block;
-	  border-left: 10px solid red;
-	  background-color: lightgrey;
-		padding: 20px 50px;
+  display: none;
+  font-size: 1.5vw;
+  height: 88vh;
+  padding: 20px 50px;
 }
 #myDIV2 {
-	height: 73vh;
-	font-size: 1.5vw;
-		display : none;
-	  border-left: 10px solid red;
-	  background-color: lightgrey;
-		padding: 20px 50px;
+  display: none;
+  font-size: 1.5vw;
+  height: 88vh;
+  padding: 20px 50px;
 }
 #myDIV3 {
-	height: 73vh;
-	font-size: 1.5vw;
-		display : none;
-	  border-left: 10px solid red;
-	  background-color: lightgrey;
-		padding: 20px 50px;
+  display: none;
+  font-size: 1.5vw;
+  height: 88vh;
+  padding: 20px 50px;
 }
 #myDIV4 {
-	height: 73vh;
-	font-size: 1.5vw;
-		display : none;
-	  border-left: 10px solid red;
-	  background-color: lightgrey;
-		padding: 20px 50px;
+  display: none;
+  font-size: 1.5vw;
+  height: 88vh;
+  padding: 20px 50px;
 }
 #myDIV5 {
-	height: 73vh;
-	font-size: 1.5vw;
-	display : none;
-	  border-left: 10px solid red;
-	  background-color: lightgrey;
-		padding: 20px 50px;
+  display: none;
+  font-size: 1.5vw;
+  height: 88vh;
+  padding: 20px 50px;
 }
 #myDIV6 {
-	height: 73vh;
-	font-size: 1.5vw;
-		display : none;
-	  border-left: 10px solid red;
-	  background-color: lightgrey;
-		padding: 20px 50px;
+  display: none;
+  font-size: 1.5vw;
+  height: 88vh;
+  padding: 20px 50px;
 }
 #myDIV7 {
-	height: 73vh;
-	font-size: 1.5vw;
-		display : none;
-	  border-left: 10px solid red;
-	  background-color: lightgrey;
-		padding: 20px 50px;
+  display: none;
+  font-size: 1.5vw;
+  height: 88vh;
+  padding: 20px 50px;
 }
 #myDIV8 {
-	height: 73vh;
-	font-size: 1.5vw;
-		display : none;
-	  border-left: 10px solid red;
-	  background-color: lightgrey;
-		padding: 20px 50px;
+  display: none;
+  font-size: 1.5vw;
+  height: 88vh;
+  padding: 20px 50px;
 }
 #myDIV9 {
-	height: 73vh;
-	font-size: 1.5vw;
-		display : none;
-	  border-left: 10px solid red;
-	  background-color: lightgrey;
-		padding: 20px 50px;
+  display: none;
+  font-size: 1.5vw;
+  height: 88vh;
+  padding: 20px 50px;
 }
 #example1 {
   box-sizing: content-box;
@@ -225,5 +203,23 @@ canvas {
   padding: 30px;
   border: 10px solid blue;
 }
-=======
->>>>>>> 1f875594eb9be3ccb0ac2a4551b21a10d6962ce7
+.flex-container {
+  width: 80%;
+  min-height: 300px;
+  margin: 0 auto;
+  display: -webkit-flex; /* Safari */
+  display: flex; /* Standard syntax */
+}
+.flex-container .column {
+  padding: 10px;
+  background: #dbdfe5;
+  -webkit-flex: 1; /* Safari */
+  -ms-flex: 1; /* IE 10 */
+  flex: 1; /* Standard syntax */
+}
+.flex-container .column.bg-alt {
+  background: #b4bac0;
+}
+.floating-box {
+  height: 20vh;
+}
